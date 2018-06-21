@@ -116,4 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 export PS1="\[\033[34m\]\u@\h \[\033[33m\]\w\[\033[31m\]\[\033[00m\]$ "
-echo "                              柏书礼，你好！                      "
+title="柏书礼，你好!"
+echo "$title"
+#printf "%*s\n" $(((${#title}+$(tput cols))/2)) "$title"
